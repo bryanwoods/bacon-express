@@ -1,4 +1,4 @@
-12:13:10-bryanwoods4e@bryan-woodss-macbook-pro:~$ ab -n 8000 -c 100 http://127.0.0.1:3000/chunky/bacon/
+12:18:56-bryanwoods4e@bryan-woodss-macbook-pro:~$ ab -n 8000 -c 100 http://127.0.0.1:3000/chunky/bacon/
 This is ApacheBench, Version 2.3 <$Revision: 655654 $>
 Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
 Licensed to The Apache Software Foundation, http://www.apache.org/
@@ -25,33 +25,33 @@ Document Path:          /chunky/bacon/
 Document Length:        301 bytes
 
 Concurrency Level:      100
-Time taken for tests:   5.967 seconds
+Time taken for tests:   3.561 seconds
 Complete requests:      8000
-Failed requests:        35
-   (Connect: 0, Receive: 0, Length: 35, Exceptions: 0)
+Failed requests:        40
+   (Connect: 0, Receive: 0, Length: 40, Exceptions: 0)
 Write errors:           0
-Total transferred:      2908031 bytes
-HTML transferred:       2404031 bytes
-Requests per second:    1340.71 [#/sec] (mean)
-Time per request:       74.588 [ms] (mean)
-Time per request:       0.746 [ms] (mean, across all concurrent requests)
-Transfer rate:          475.93 [Kbytes/sec] received
+Total transferred:      2907532 bytes
+HTML transferred:       2403532 bytes
+Requests per second:    2246.34 [#/sec] (mean)
+Time per request:       44.517 [ms] (mean)
+Time per request:       0.445 [ms] (mean, across all concurrent requests)
+Transfer rate:          797.28 [Kbytes/sec] received
 
 Connection Times (ms)
               min  mean[+/-sd] median   max
-Connect:        0    0   0.6      0      16
-Processing:     9   74  19.4     67     146
-Waiting:        8   74  19.3     67     146
-Total:         16   74  19.3     67     146
+Connect:        0    0   1.3      0      27
+Processing:     4   44  17.7     38     141
+Waiting:        4   43  17.6     37     141
+Total:         13   44  17.5     38     141
 
 Percentage of the requests served within a certain time (ms)
-  50%     67
-  66%     74
-  75%     78
-  80%     83
-  90%    106
-  95%    115
-  98%    133
-  99%    143
- 100%    146 (longest request)
+  50%     38
+  66%     43
+  75%     46
+  80%     50
+  90%     61
+  95%     88
+  98%     94
+  99%    140
+ 100%    141 (longest request)
 
