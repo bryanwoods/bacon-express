@@ -26,7 +26,6 @@ get('/public/*', function(file){
 
 
 get ('/chunky/bacon', function() {
-  var mime = require('express/mime')
   this.render('bacon.html.haml', {
     layout: false,
     locals: {
