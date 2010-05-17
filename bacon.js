@@ -6,7 +6,7 @@ configure(function() {
   set('root', __dirname)
   use(Logger)
   use(Static, {
-    path: require("path").join(__dirname, "public")
+    path: require('path').join(__dirname, 'public')
   }) 
 })
 
@@ -24,7 +24,6 @@ get('/public/*', function(file){
   this.sendfile(__dirname + '/public/' + file) 
 }) 
 
-
 get ('/chunky/bacon', function() {
   this.render('bacon.html.haml', {
     layout: false,
@@ -36,4 +35,3 @@ get ('/chunky/bacon', function() {
 })
 
 run()
-
