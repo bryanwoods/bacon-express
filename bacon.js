@@ -24,7 +24,7 @@ get('/public/*', function(file){
   this.sendfile(__dirname + '/public/' + file) 
 }) 
 
-get ('/chunky/bacon', function() {
+get('/chunky/bacon', function() {
   this.render('bacon.html.haml', {
     layout: false,
     locals: {
