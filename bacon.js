@@ -14,13 +14,13 @@ get('/', function() {
   this.redirect('/chunky/bacon')
 })
 
-get('/*.css', function(file){
+get('/*.css', function(file) {
   this.render(file + '.css.sass', {
     layout: false
   })
 })
 
-get('/public/*', function(file){ 
+get('/public/*', function(file) { 
   this.sendfile(__dirname + '/public/' + file) 
 }) 
 
