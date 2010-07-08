@@ -1,4 +1,4 @@
-require.paths.unshift('express/lib')
+require.paths.unshift('vendor/express/lib')
 require('express')
 require('express/plugins')
 
