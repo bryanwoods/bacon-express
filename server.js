@@ -8,6 +8,7 @@ configure(function() {
   use(Static, {
     path: require('path').join(__dirname, 'public')
   }) 
+  enable("show exceptions")
 })
 
 get('/', function() {
