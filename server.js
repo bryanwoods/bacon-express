@@ -30,7 +30,13 @@ get('/chunky/bacon', function() {
     layout: false,
     locals: {
       title: 'Chunky Bacon!',
-      logo: '/public/images/bacon.jpg'
+      /*
+       * Looks like Heroku's not streaming files
+       * From the public directory properly.
+       * Linking to external image for now.
+      // logo: '/public/images/bacon.jpg'
+      */
+      logo: 'http://s3.amazonaws.com/boxflag-production/attachments/image/192/original.jpg?1278549707'
     }
   })
 })
